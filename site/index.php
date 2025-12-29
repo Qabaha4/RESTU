@@ -367,7 +367,7 @@
           type="text"
           name="meal"
           class="search-input"
-          placeholder="What are you craving? (e.g., pizza, sushi, burger...)"
+          placeholder="مرحبا"
           required
           value="<?php echo isset($_POST['meal']) ? htmlspecialchars($_POST['meal']) : ''; ?>">
         <button type="submit" class="search-button">🔍 Search</button>
