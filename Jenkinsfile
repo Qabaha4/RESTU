@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        REPO_URL = 'https://github.com/maliknihad004/restu.git'
+        REPO_URL = 'https://github.com/Qabaha4/RESTU.git'
         DOCKER_BUILDKIT = '1'
     }
 
