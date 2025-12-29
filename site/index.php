@@ -351,7 +351,7 @@
 <body>
   <nav class="navbar">
     <div class="container">
-      <a class="navbar-brand" href="#">🍽️ Falayeh</a>
+      <a class="navbar-brand" href="#">Falayeh</a>
     </div>
   </nav>
 
