@@ -362,7 +362,7 @@
     </div>
 
     <div class="search-card">
-      <form method="POST" class="search-form">
+      <form method="GET" class="search-form">
         <input
           type="text"
           name="meal"
@@ -374,7 +374,7 @@
       </form>
 
       <?php
-      if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_GET['meal']) && $_GET['meal'] !== "") {
+      if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['meal']) && $_GET['meal'] !== "") {
         $meal = trim($_GET['meal']);
         $stmt = $conn->prepare("
           SELECT best_restaurant, rating
