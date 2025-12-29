@@ -369,13 +369,13 @@
           class="search-input"
           placeholder="مرحبا"
           required
-          value="<?php echo isset($_POST['meal']) ? htmlspecialchars($_POST['meal']) : ''; ?>">
+          value="<?php echo isset($_GET['meal']) ? htmlspecialchars($_GET['meal']) : ''; ?>">
         <button type="submit" class="search-button">🔍 Search</button>
       </form>
 
       <?php
-      if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['meal']) && $_POST['meal'] !== "") {
-        $meal = trim($_POST['meal']);
+      if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_GET['meal']) && $_GET['meal'] !== "") {
+        $meal = trim($_GET['meal']);
         $stmt = $conn->prepare("
           SELECT best_restaurant, rating
           FROM restaurant
